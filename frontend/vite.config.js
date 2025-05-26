@@ -1,10 +1,29 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import path from 'path' // 导入 path 模块
+import path from 'path'
+import AutoImport from 'unplugin-auto-import/vite' // 导入
+import Components from 'unplugin-vue-components/vite' // 导入
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers' // 导入
+import viteCompression from 'vite-plugin-compression'; // 导入插件
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    viteCompression({ // 添加插件配置
+      verbose: true, // 是否在控制台输出压缩结果
+      disable: false, // 是否禁用
+      threshold: 10240, // 文件大小大于 10kb 才进行压缩 (单位: bytes)
+      algorithm: 'gzip', // 压缩算法, 可选 [ 'gzip' , 'brotliCompress' ,'deflate' , 'deflateRaw']
+      ext: '.gz', // 生成的压缩包后缀
+    }),
+    AutoImport({
+      resolvers: [ElementPlusResolver()],
+    }),
+    Components({
+      resolvers: [ElementPlusResolver()],
+    }),
+  ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src') // 设置 @ 别名指向 src 目录

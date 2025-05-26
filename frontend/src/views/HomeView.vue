@@ -132,10 +132,12 @@
 import { ref, onMounted, reactive, nextTick, computed } from 'vue';
 // import axios from 'axios'; // No longer directly needed for these operations
 import { ElMessage } from 'element-plus';
-import Chart from 'chart.js/auto'; // Using Chart.js v3+
+import { Chart, registerables } from 'chart.js/auto'; // Using Chart.js v3+
 import { useTeacherStore } from '@/stores/teacherStore';
 import { useProjectStore } from '@/stores/projectStore';
 import { storeToRefs } from 'pinia';
+
+Chart.register(...registerables);
 
 const teacherStore = useTeacherStore();
 const projectStore = useProjectStore();

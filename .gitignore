@@ -79,3 +79,5 @@ secrets.properties
 
 # Binary files
 bin/
+
+node_modules/
