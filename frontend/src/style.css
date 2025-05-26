@@ -1,0 +1,60 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark; */ /* Element Plus handles this */
+  /* color: rgba(255, 255, 255, 0.87); */ /* Element Plus handles this */
+  /* background-color: #242424; */ /* Element Plus handles this */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  /* display: flex; */ /* Remove this to allow normal page flow */
+  /* place-items: center; */ /* Remove this */
+  min-width: 320px;
+  min-height: 100vh;
+  /* background-color: #f4f4f4; */ /* Removed, App.vue handles background */
+}
+
+#app {
+  /* max-width: 1280px; */ /* Allow full width */
+  margin: 0 auto;
+  /* padding: 2rem; */ /* Remove default padding */
+  /* text-align: center; */ /* Remove default text-align */
+  font-weight: normal;
+}
+
+/* Global styles matching Semantic UI where appropriate */
+/* Removing these as App.vue and Element Plus enhancements will cover them */
+/* .ui.container { ... } */
+/* .ui.segment { ... } */
+/* .ui.header { ... } */
+/* .ui.teal.header { ... } */
+/* .ui.center.aligned.header { ... } */
+/* .ui.table { ... } */
+/* .ui.celled.table>thead>tr>th { ... } */
+/* .ui.celled.table>thead>tr>th, .ui.celled.table>tbody>tr>td { ... } */
+/* .ui.celled.table>tbody>tr:first-child>td { ... } */
+/* .ui.celled.table>thead>tr>th:first-child, .ui.celled.table>tbody>tr>td:first-child { ... } */
+
+
+/* ... (remove Vite specific button, a, h1 styles if not needed globally) ... */
+/* Keep media query for light/dark theme if Element Plus doesn't fully cover it or for custom components */
+/* @media (prefers-color-scheme: light) { */
+  /* :root { */
+    /* color: #213547; */
+    /* background-color: #ffffff; */
+  /* } */
+  /* a:hover { */
+    /* color: #747bff; */
+  /* } */
+  /* button { */
+    /* background-color: #f9f9f9; */
+  /* } */
+/* } */
