@@ -205,4 +205,4 @@ vue serve
 Expressions of gratitude are extended to Copilot.
 
 ## License
-Feel Pleasure if this project is helpful to you.
+My pleasure if this project helps you.
