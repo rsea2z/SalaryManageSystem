@@ -164,6 +164,10 @@
     ```bash
     vue serve
     ```
+    或
+    ```bash
+    npm run dev
+    ```
     -   前端开发服务器默认运行在 `http://localhost:3000` (根据 [`frontend/vite.config.js`](frontend/vite.config.js) 配置)。
     -   前端应用会通过 Axios 调用 `http://localhost:8080/api` 下的后端接口 (根据 [`frontend/src/main.js`](frontend/src/main.js) 配置)。
 
